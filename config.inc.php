@@ -45,7 +45,7 @@
             "name" => "AVM",
             "filename" => "avm",
             "offset_modell" => 4,
-            "offset_version" => -1
+            "offset_version" => 4
         ),
         array(
             "name" => "Buffalo",
@@ -141,7 +141,7 @@
             "name" => "Zyxel",
             "filename" => "zyxel",
             "offset_modell" => 6,
-            "offset_version" => -1
+            "offset_version" => 4
         )
     );
     $anzahl_hersteller = count($hersteller);
