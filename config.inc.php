@@ -136,6 +136,12 @@
             "filename" => "x86",
             "offset_modell" => 4,
             "offset_version" => 4
+        ),
+        array(
+            "name" => "Zyxel",
+            "filename" => "zyxel",
+            "offset_modell" => 6,
+            "offset_version" => -1
         )
     );
     $anzahl_hersteller = count($hersteller);
