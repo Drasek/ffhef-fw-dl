@@ -42,6 +42,12 @@
             "offset_version" => 4
         ),
         array(
+            "name" => "AVM",
+            "filename" => "avm",
+            "offset_modell" => 4,
+            "offset_version" => -1
+        ),
+        array(
             "name" => "Buffalo",
             "filename" => "buffalo",
             "offset_modell" => 8,
