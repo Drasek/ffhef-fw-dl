@@ -63,18 +63,17 @@ for( $i=0; $i<count($entwicklung); $i++ ) {
                                 break;
                             case "TP-Link":
                                 $router_tmp[$x]['version'] = substr($files[$entwicklung[$i]][$installation[$j]][$x], strripos($files[$entwicklung[$i]][$installation[$j]][$x], "v"), -4-$offset_sysupgrade[$j]);
-                                echo($router_tmp[$x]['version']);
-                if(strlen($router_tmp[$x]['version']) >= 5) {
-                    $router_tmp[$x]['version'] = "Alle";
+                                if(strlen($router_tmp[$x]['version']) >= 5) {
+                                    $router_tmp[$x]['version'] = "Alle";
                                 }
                                 break;
                             default:
                                 $router_tmp[$x]['version'] = "Alle";
                         }
                         $router_tmp[$x]['modell'] = strtoupper(substr($files[$entwicklung[$i]][$installation[$j]][$x], $pos_hersteller[$entwicklung[$i]][$installation[$j]]+$hersteller[$y]['offset_modell'], strripos($files[$entwicklung[$i]][$installation[$j]][$x], ".", -4)-strlen($files[$entwicklung[$i]][$installation[$j]][$x])-strlen($router_tmp[$x]['version'])+$hersteller[$y]['offset_version']-$offset_sysupgrade[$j]));
-            if($router_tmp[$x]['modell'] == "" && $router_tmp[$x]['hersteller'] != "Raspberry Pi") {
-                $router_tmp[$x]['modell'] = strtoupper(substr($files[$entwicklung[$i]][$installation[$j]][$x], $pos_hersteller[$entwicklung[$i]][$installation[$j]]+$hersteller[$y]['offset_modell'], strripos($files[$entwicklung[$i]][$installation[$j]][$x], ".", -4)-strlen($files[$entwicklung[$i]][$installation[$j]][$x])-$hersteller[$y]['offset_version']-1-$offset_sysupgrade[$j]));
-            }
+                        if($router_tmp[$x]['modell'] == "" && $router_tmp[$x]['hersteller'] != "Raspberry Pi") {
+                            $router_tmp[$x]['modell'] = strtoupper(substr($files[$entwicklung[$i]][$installation[$j]][$x], $pos_hersteller[$entwicklung[$i]][$installation[$j]]+$hersteller[$y]['offset_modell'], strripos($files[$entwicklung[$i]][$installation[$j]][$x], ".", -4)-strlen($files[$entwicklung[$i]][$installation[$j]][$x])-$hersteller[$y]['offset_version']-1-$offset_sysupgrade[$j]));
+                        }
                     }
                 }
                 if(isset($router_tmp[$x]['hersteller']) != true) {
