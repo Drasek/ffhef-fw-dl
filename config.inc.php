@@ -27,7 +27,7 @@
             "name" => "8devices",
             "filename" => "8devices",
             "offset_modell" => 9,
-            "offset_version" => 3
+            "offset_version" => 4
         ),
         array(
             "name" => "Alfa",
@@ -39,6 +39,12 @@
             "name" => "Allnet",
             "filename" => "allnet",
             "offset_modell" => 7,
+            "offset_version" => 4
+        ),
+        array(
+            "name" => "AVM",
+            "filename" => "avm",
+            "offset_modell" => 4,
             "offset_version" => 4
         ),
         array(
@@ -129,6 +135,12 @@
             "name" => "x86",
             "filename" => "x86",
             "offset_modell" => 4,
+            "offset_version" => 4
+        ),
+        array(
+            "name" => "Zyxel",
+            "filename" => "zyxel",
+            "offset_modell" => 6,
             "offset_version" => 4
         )
     );
