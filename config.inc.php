@@ -132,6 +132,12 @@
             "offset_version" => 4
         ),
         array(
+	    "name" => "Ubiquiti (newer)",
+	    "filename" => "ubnt",
+	    "offset_modell" => 5,
+	    "offset_version" => -1
+	),
+        array(
             "name" => "Western Digital",
             "filename" => "-wd-",
             "offset_modell" => 3,
