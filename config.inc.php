@@ -72,6 +72,12 @@
             "offset_version" => -1
         ),
         array(
+	    "name" => "Lamobo",
+            "filename" => "lamobo",
+	    "offset_modell" => 7,
+	    "offset_version" => -1
+	),
+        array(
             "name" => "LeMaker",
             "filename" => "lemaker",
             "offset_modell" => 8,
