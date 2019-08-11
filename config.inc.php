@@ -156,6 +156,12 @@
             "offset_version" => 4
         ),
         array(
+	    "name" => "ZBT Shenzhen Electronics",
+	    "filename" => "zbt",
+	    "offset_modell" => 4,
+	    "offset_version" => -1
+	),
+        array(
             "name" => "Zyxel",
             "filename" => "zyxel",
             "offset_modell" => 6,
