@@ -143,6 +143,12 @@
 	    "offset_modell" => 5,
 	    "offset_version" => -1
 	),
+	array(
+            "name" => "VoCore",
+            "filename" => "vocore",
+            "offset_modell" => 0,
+            "offset_version" => 4
+        ),
         array(
             "name" => "Western Digital",
             "filename" => "-wd-",
